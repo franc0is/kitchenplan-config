@@ -1,5 +1,6 @@
 groups:
     - pebble
+    - pebble-dev
 
 recipes:
     global:
@@ -30,7 +31,6 @@ attributes:
             - libftdi0
             - pkg-config
             - pebble-openocd
-            - arm-none-eabi-gcc
             - pebble-qemu
         cask_apps:
             - sourcetree
