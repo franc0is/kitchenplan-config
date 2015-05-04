@@ -3,3 +3,4 @@ attributes:
         cask_apps:
             - hipchat
             - dropbox
+            - viscosity
