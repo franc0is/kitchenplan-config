@@ -1,13 +1,47 @@
 groups:
-    - groupa
+    - firmware
+    - vim
+
 recipes:
+    global:
+        - dotfiles::bash_it
+        - dotfiles::inputrc
     mac_os_x:
-        - osxdefaults::set_computer_name
+        - nodejs::default
+        - osxdefaults::disable_natural_scrolling
+        - osxdefaults::enable_standard_function_keys
+        - osxdefaults::menu_show_clock_with_date
+        - osxdefaults::finder_display_full_path
+        - osxdefaults::finder_new_finder_windows_shows_homefolder
+         - osxdefaults::do_not_show_dashboard_as_a_space
+
 attributes:
-    osxdefaults:
-        computername: MyComputerName
+    dotfiles:
+        vimusers:
+            - root
+            - francois
+    git:
+        name: François Baldassari
+        email: francois@getpebble.com
+
     homebrewalt:
         apps:
-            - git-extras
+            - ncdu
+            - z
+            - tree
+            - openssl
+            - bash-completion
         cask_apps:
-            - sourcetree
+            - growlnotify
+            - firefox
+            - nvalt
+            - google-drive
+            - alfred
+            - spotify
+            - 1password
+            - rescuetime
+            - steam
+            - tunnelblick
+            - flux
+            - dash
+

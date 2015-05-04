@@ -1,20 +1,26 @@
-recipes:                                       # Configs are parsed and every list is appended to each other, chef handles order and de-duplication
-    global:                                    # Recipes mentioned under "global" are installed for all operating systems (we used to support linux, and may do so in the future)
+recipes:
+    global:
         - applications::create_var_chef_cache
-    mac_os_x:                                  # Recipes mentioned under "mac_os_x" are installed on OSX and OSX Server
-        - homebrewalt::default                 # Installs homebrew and homebrew cask and installs all apps mentioned in the homebrewalt:apps and homebrewalt:cask_apps attributes
-        - nodejs::default                      # Installs nodejs and installs all nodejs packages mentioned in the nodejs:apps attribute
+    mac_os_x:
+        - homebrewalt::default
+        - osxdefaults::enable_remote_desktop
+        - osxdefaults::enable_remote_login
+        - osxdefaults::check_for_software_updates_daily
+        - osxdefaults::enable_subpixel_font_rendering_on_non-apple_lcds
+        - osxdefaults::save_screenshots_in_png_format
+        - osxdefaults::finder_small_sidebar_icon_size
+        - osxdefaults::automatically_quit_printer_app_once_the_print_jobs_complete
+        - osxdefaults::avoid_creating_ds_store_files_on_network_volumes
+        - osxdefaults::dock_make_dock_icons_of_hidden_applications_translucent
+        - osxdefaults::tap_to_click
+        - osxdefaults::finder_search_the_current_folder_by_default
+
 attributes:
     homebrewalt:
         apps:
             - git
-	    - vim
             - readline
-	    - bash
-        cask_apps:
-            - firefox
-        cask_fonts:   
-            - inconsolata
-    nodejs:
-        apps:
-            - bower
+            - bash
+#        cask_apps:
+#            - java
+
