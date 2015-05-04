@@ -1,0 +1,36 @@
+groups:
+    - pebble
+
+recipes:
+    global:
+        - dotfiles::gitconfig
+
+attributes:
+    homebrewalt:
+        taps:
+            - franc0is/pebble-fw
+        apps:
+            - arcanist
+            - git-extras
+            - wget
+            - cppcheck
+            - doxygen
+            - freetype
+            - llvm
+            - libgit2
+            - grep
+            - pypy
+            - ragel
+            - gettext
+            - libftdi
+            - libusb-compat
+            - autoconf
+            - automake 
+            - libtool
+            - libftdi0
+            - pkg-config
+            - pebble-openocd
+            - arm-none-eabi-gcc
+            - pebble-qemu
+        cask_apps:
+            - sourcetree

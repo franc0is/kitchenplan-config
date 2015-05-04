@@ -1,0 +1,29 @@
+recipes:
+    global:
+        - dotfiles::vim
+
+attributes:
+    dotfiles:
+        vim:
+            bundle:
+                - funcoo: git://github.com/rizzatti/funcoo.vim.git
+                - a.vim: git://github.com/vim-scripts/a.vim.git
+                - ctrlp: git://github.com/kien/ctrlp.vim.git
+                - dash: git://github.com/rizzatti/dash.vim.git
+                - rust: git://github.com/rust-lang/rust.vim.git
+                - airline: git://github.com/bling/vim-airline.git 
+                - fugitive: git://github.com/tpope/vim-fugitive.git
+                - sleuth: git://github.com/tpope/vim-sleuth.git
+                - sensible: git://github.com/tpope/vim-sensible.git
+                - inkpot: git://github.com/ciaranm/inkpot.git
+
+    homebrewalt:
+        taps:
+            - neovim/neovim
+        apps:
+            - vim
+            - cscope
+            - ctags
+            - tmux
+            - reattach-to-user-namespace
+            
