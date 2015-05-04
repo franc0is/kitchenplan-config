@@ -13,7 +13,7 @@ recipes:
         - osxdefaults::menu_show_clock_with_date
         - osxdefaults::finder_display_full_path
         - osxdefaults::finder_new_finder_windows_shows_homefolder
-         - osxdefaults::do_not_show_dashboard_as_a_space
+        - osxdefaults::do_not_show_dashboard_as_a_space
 
 attributes:
     dotfiles:
