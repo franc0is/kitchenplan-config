@@ -21,6 +21,6 @@ attributes:
             - git
             - readline
             - bash
-#        cask_apps:
-#            - java
+        cask_apps:
+            - flash-player
 
