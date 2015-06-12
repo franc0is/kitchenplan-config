@@ -32,5 +32,6 @@ attributes:
             - pkg-config
             - pebble-openocd
             - pebble-qemu
+            - llvm
         cask_apps:
             - sourcetree
